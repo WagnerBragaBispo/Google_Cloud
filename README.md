@@ -85,5 +85,13 @@ Link Google Documentação Console do Google Cloud: https://cloud.google.com/ver
 Link Google Documentação Cloud Storage client libraries: https://cloud.google.com/storage/docs/reference/libraries?hl=pt_br
 Link Tutorial # Google Cloud AI Notebook Tutorials: https://3741906741e829ae-dot-us-west1.notebooks.googleusercontent.com/lab/tree/tutorials/README.ipynb
 
+Google Cloud Essentials: 
+Passo 1 ---> GSP282 A Tour of Google Cloud Hands-on Labs https://www.cloudskillsboost.google/focuses/3495?parent=catalog
+Passo 2 ---> GSP001 Creating a Virtual Machine https://www.cloudskillsboost.google/focuses/8585?parent=catalog
 https://www.cloudskillsboost.google/focuses/2794?locale=pt_BR&parent=catalog
+
+
+Username: student-04-bad0da8fa959@qwiklabs.net
+Senha: zNHPcWd993y
+ID Projeto: qwiklabs-gcp-03-56e87d1fe127
 
