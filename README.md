@@ -87,7 +87,9 @@ Link Tutorial # Google Cloud AI Notebook Tutorials: https://3741906741e829ae-dot
 
 Google Cloud Essentials: 
 Passo 1 ---> GSP282 A Tour of Google Cloud Hands-on Labs https://www.cloudskillsboost.google/focuses/3495?parent=catalog
+
 Passo 2 ---> GSP001 Creating a Virtual Machine https://www.cloudskillsboost.google/focuses/8585?parent=catalog
+
 https://www.cloudskillsboost.google/focuses/2794?locale=pt_BR&parent=catalog
 
 
