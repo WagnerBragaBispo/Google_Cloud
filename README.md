@@ -87,13 +87,28 @@ Link Tutorial # Google Cloud AI Notebook Tutorials: https://3741906741e829ae-dot
 
 Google Cloud Essentials: 
 Passo 1 ---> GSP282 A Tour of Google Cloud Hands-on Labs https://www.cloudskillsboost.google/focuses/3495?parent=catalog
-
-Passo 2 ---> GSP001 Creating a Virtual Machine https://www.cloudskillsboost.google/focuses/8585?parent=catalog
-
 https://www.cloudskillsboost.google/focuses/2794?locale=pt_BR&parent=catalog
 
 
 Username: student-04-bad0da8fa959@qwiklabs.net
 Senha: zNHPcWd993y
 ID Projeto: qwiklabs-gcp-03-56e87d1fe127
+
+Passo 2 ---> GSP001 Creating a Virtual Machine https://www.cloudskillsboost.google/focuses/8585?parent=catalog
+    Roteiro:
+        Crie uma máquina virtual com Cloud Console;
+        Crie uma máquina virtual com a gcloud linha de comando
+        Implante um servidor da web e conect-o uma máquina virtual
+        P2.1 --> Incia o laboratorio/Copia os dados de Username, Password, GCP Project ID/realiza o Sing in com dados copiados/Aceite os termos e não adicione opções de recurações e de avaliações gratuitas/Ativa o Cloud Shell/Apoś Ativar o Terminal Linux podemos listar o nome da conta (provisória liberada pelo Google "quiklabs-gcp-...."); depois o ID do projeto; depois o seguinte comando:
+ 
+    Username: student-04-bad0da8fa959@qwiklabs.net
+    Senha: zNHPcWd993y
+    ID Projeto: qwiklabs-gcp-03-da6bf22a156e
+
+    P2.2 --> You can list the active account name with this command: gcloud auth list 
+    P2.2 --> You can list the project ID with this command: gcloud config list project
+    
+    P2.3 Atenção para fixar o resultado do projeto utilize o mesmo "recurso zonal" ou seja a mesma instância da máquina virtual 
+
+Passo 3 ---> GSP093 Compute Engine: Qwik Start — Windows https://www.cloudskillsboost.google/focuses/2?locale=pt_BR&parent=catalog
 
