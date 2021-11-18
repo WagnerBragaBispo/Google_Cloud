@@ -101,14 +101,81 @@ Passo 2 ---> GSP001 Creating a Virtual Machine https://www.cloudskillsboost.goog
         Implante um servidor da web e conect-o uma máquina virtual
         P2.1 --> Incia o laboratorio/Copia os dados de Username, Password, GCP Project ID/realiza o Sing in com dados copiados/Aceite os termos e não adicione opções de recurações e de avaliações gratuitas/Ativa o Cloud Shell/Apoś Ativar o Terminal Linux podemos listar o nome da conta (provisória liberada pelo Google "quiklabs-gcp-...."); depois o ID do projeto; depois o seguinte comando:
  
-    Username: student-04-bad0da8fa959@qwiklabs.net
-    Senha: zNHPcWd993y
-    ID Projeto: qwiklabs-gcp-03-da6bf22a156e
+   Username: student-04-bad0da8fa959@qwiklabs.net
+   Senha: zNHPcWd993y
+   ID Projeto: qwiklabs-gcp-03-da6bf22a156e
 
-    P2.2 --> You can list the active account name with this command: gcloud auth list 
-    P2.2 --> You can list the project ID with this command: gcloud config list project
+   P2.2 --> You can list the active account name with this command: gcloud auth list 
+   P2.2 --> You can list the project ID with this command: gcloud config list project
     
-    P2.3 Atenção para fixar o resultado do projeto utilize o mesmo "recurso zonal" ou seja a mesma instância da máquina virtual 
+   P2.3 Atenção para fixar o resultado do projeto utilize o mesmo "recurso zonal" ou seja a mesma instância da máquina virtual 
 
 Passo 3 ---> GSP093 Compute Engine: Qwik Start — Windows https://www.cloudskillsboost.google/focuses/2?locale=pt_BR&parent=catalog
 
+   Username: student-04-bad0da8fa959@qwiklabs.net
+   Senha: zNHPcWd993y
+   ID Projeto: qwiklabs-gcp-04-3467cca95faf
+    P3.1 --> Começar o laboratório.>Abrir Console do Google> copiado do painel "Detalhes da conexão" > clique em Menu de navegação no canto superior esquerdo, ao lado de "Google Cloud Platform". > 
+    P3.2 --> Crie uma instância de máquina virtual > Menu de navegação e clique em Compute Engine > Instâncias de VM e depois clique em Criar Instância.
+    p3.3 --> Na seção Configuração da máquina, para Série selecione N1
+    P3.4 --> Na seção Disco de inicialização, clique em Alterar para iniciar a configuração do disco de inicialização.
+    P3.5 --> Escolha Windows Server 2012 R2 Datacenter e clique em Selecionar. Não altere as outras configurações.
+    P3.6 --> No Terminal liste o nome da conta ativa com o seguinte comando
+    
+    gcloud auth list
+
+p3.7 --> É possível listar o ID de projeto com este comando: (tiv problema neste passo, portanto verificar documentação: https://cloud.google.com/sdk/gcloud)
+
+     gcloud config list project
+	
+p3.8 -->    Teste o status da inicialização do Windows, após instalar. Para verificar se ela está pronta para uma conexão RDP, execute o seguinte comando na linha de comando do terminal do Cloud Shell:
+Plugin do Chrome > Chrome RDP for Google Cloud Platform: https://chrome.google.com/webstore/detail/chrome-rdp-for-google-clo/mpbbnannobiobpnfblimoapbephgifkm
+
+    gcloud compute instances get-serial-port-output instance-1
+
+p3.9 --> RDP no Windows Server: Para definir uma senha e fazer login no RDP, execute o comando a seguir no terminal do Cloud Shell, substitua [instance] pela instância de VM que você criou e defina [username] como administrador.   
+   
+    gcloud compute reset-windows-password [instance] --zone us-central1-a --user [username]
+
+P3.10 --> Se aparecer a pergunta Would you like to set or reset the password for [admin] (Y/n)?, responda Y.
+   
+   Acesso RDP
+   Nome do usuário: student_04_bad0da8fa
+   senha
+
+
+
+p3.11 -->
+
+Copie e cole com o cliente do RDP
+
+Depois de fazer login com segurança na sua instância, você encontrará os comandos para copiar e colar no manual do laboratório.
+
+Para colar, pressione as teclas CTRL-V (CMND-V não funcionará para usuários do Mac). Se você estiver em uma janela do Powershell, precisa clicar nela antes de usar as teclas de atalho para colar.
+
+Se você estiver colando no PuTTY, clique com o botão direito.
+
+
+Google Cloud Essentials: 
+Passo 1 ---> GSP093 Compute Engine: Qwik Start - Windows  https://www.cloudskillsboost.google/focuses/2?parent=catalog aprenda no Youtube https://www.youtube.com/watch?v=EFPaP20APuw
+
+Passo 1.1 ---> GSP093 Vamos aprender sobre Remote Desktop Protocol (RDP) 
+
+Username: student-04-bad0da8fa959@qwiklabs.net
+Senha: zNHPcWd993y
+ID Projeto: qwiklabs-gcp-02-e2df2887c854
+
+Passo 2.0 ---> GSP093 Crie uma instância de máquina virtual
+Passo 2.1 ---> GSP093 Série para N1 --> Altere o Boot disk para Windows Server
+Passo 2.2 ---> GSP093 Ative o Google Cloud Shell com os comandos listados acima em passos superiores
+Passo 3.0 ---> GSP093 Teste o status da conexão RDP com o seguinte comando: gcloud compute instances get-serial-port-output instance-1
+Nota: ao testar a conexão aperece a msg: You don't have permission to edit the permissions of the selected resource 
+
+    gcloud compute reset-windows-password [instance] --zone us-central1-a --user [username]
+gcloud compute reset-windows-password instance-1 --zone us-central1-a --user student-04-bad0da8fa959@qwiklabs.net
+
+IP 104.196.253.181 deu erro
+IP 10.128.0.2 deu erro
+IP 34.135.104.212
+Usuário: student_04_bad0da8fa
+Usuário: admin deu erro
